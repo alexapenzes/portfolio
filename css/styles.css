@@ -67,6 +67,21 @@ img {
     align-items: center;
     justify-content: center;
 }
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #474973;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.section-title span {
+  color: #a69cac;
+}
+
 /*Navbar*/
 .navbar {
   position: fixed;
@@ -146,3 +161,75 @@ img {
   text-shadow: -2.5px 2.5px 3px #474973;
   text-transform: uppercase;
 }
+
+/* Work section */
+#projects .projects {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 100px 0;
+}
+
+#projects .projects-header h1 {
+  margin-bottom: 50px;
+}
+
+#projects .grid-item {
+    display: inline-block;
+    width: auto;
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    .grid-item {
+        background-image: linear-gradient(60deg, #2f314d 10%, #161b33 90%);
+        color: #A69CAC;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 20px;
+        border-radius: 8px;
+    }
+}
+
+#projects #grid-footer a {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #161b33;
+    border: 2px solid #161b33;
+    width: 100%;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease;
+    transition-property: background-color;
+}
+
+#projects #grid-footer a:hover {
+    background-color: transparent;
+    opacity: 0.7;
+    border: 2px solid #161b33;
+}
+
+#projects .grid-info h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#projects .grid-info h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+/*End Work section */
