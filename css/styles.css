@@ -233,3 +233,43 @@ img {
   font-weight: 400;
 }
 /*End Work section */
+
+/* About section */
+#about .about {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#about .col-left {
+  width: 300px;
+  height: auto;
+}
+
+#about .col-right {
+  align-items: center;
+  justify-content: center;
+}
+
+#about .col-right h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#about .col-right p {
+  margin-bottom: 20px;
+  text-align: justify;
+  max-width: 600px;
+
+}
+
+#about .col-left .about-img {
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+}
+
+/*End About section */
