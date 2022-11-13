@@ -1,0 +1,15 @@
+/* Text colors */
+
+/*xiketic: #0D0C1D -darkest
+oxford blue: #161B33 
+purple navy: #474973
+heliotrope gray: #A69CAC -prim
+almond: #F1DAC4 */
+
+.text-primary {
+    color: #474973;
+}
+
+.text-secondary {
+    color: #F1DAC4;
+}

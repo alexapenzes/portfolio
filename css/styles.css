@@ -1,0 +1,148 @@
+/*xiketic: #0D0C1D -darkest
+oxford blue: #161B33 
+purple navy: #474973
+heliotrope gray: #A69CAC -prim
+almond: #F1DAC4 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0c1d;
+  color: #a69cac;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #a69cac;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #f1dac4;
+    font-weight: 350;
+    background-color: #474973;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+  }
+  
+  .btn:hover {
+    background-color: #a69cac;
+    color: #474973;
+  }
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Navbar*/
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #161b33;
+  color: #a69cac;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar a {
+  color: #a69cac;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #474973 2px solid;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+/*Header*/
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(12, 3, 51, 0.271),
+    rgba(12, 3, 51, 0.271)
+  );
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 70px;
+  text-shadow: -2.5px 2.5px 5px #161b33;
+  color: #474973;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: -2.5px 2.5px 3px #474973;
+  text-transform: uppercase;
+}
