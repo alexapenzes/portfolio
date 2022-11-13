@@ -325,3 +325,41 @@ img {
 }
 
 /*End Contact section*/
+
+/*Footer*/
+#footer {
+    background-color: #161b33;
+  opacity: 0.8;
+  width: 100%;
+  clear: both;
+}
+
+#footer .footer {
+    min-height: 150px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    bottom: 0;
+}
+
+#footer h1 {
+    font-size: 16px;
+}
+
+#footer h2 {
+    color: #A69CAC;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#footer .social-item {
+    margin: 0 5px;
+    padding-top: 10px;
+}
+
+/*End Footer*/
