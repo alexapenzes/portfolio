@@ -12,6 +12,10 @@ almond: #F1DAC4 */
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #0d0c1d;
