@@ -178,7 +178,10 @@ img {
 }
 
 #projects .projects-header h1 {
-  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 #projects .grid-item {
@@ -186,58 +189,68 @@ img {
   width: auto;
 }
 
+#projects .grid-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 165px;
+  border-radius: 10px 10px 0px 0px;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  gap: 1em;
+  align-items: center;
   }
 
   .grid-item {
     background-image: linear-gradient(60deg, #2f314d 10%, #161b33 90%);
     color: #a69cac;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 20px;
-    border-radius: 8px;
+    display: grid;
+    grid-template: 1fr fit-content(50px) 50px / 1fr;
+  align-content: stretch;
+  justify-content: space-around;
+  margin: 20px;
+  min-height: 100%;
+  border-radius: 10px;
   }
 }
 
 #projects #grid-footer a {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #161b33;
-  border: 2px solid #161b33;
-  width: 100%;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
   margin: 5px;
-  padding: 5px 0;
+  display: flex;
+  background-color: #161b33;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.3s ease;
   transition-property: background-color;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
 
 #projects #grid-footer a:hover {
   background-color: transparent;
   opacity: 0.7;
-  border: 2px solid #161b33;
+  border: none;
 }
 
 #projects .grid-info h1 {
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 15px;
 }
 
-#projects .grid-info h2 {
-  font-size: 25px;
+#projects .grid-info p {
+  font-size: 16px;
   font-weight: 400;
+  padding: 10px;
 }
 /*End Work section */
 
