@@ -199,10 +199,10 @@ img {
 @supports (display: grid) {
   .grid {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
-  gap: 1em;
-  align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    gap: 1em;
+    align-items: center;
   }
 
   .grid-item {
@@ -210,11 +210,11 @@ img {
     color: #a69cac;
     display: grid;
     grid-template: 1fr fit-content(50px) 50px / 1fr;
-  align-content: stretch;
-  justify-content: space-around;
-  margin: 20px;
-  min-height: 100%;
-  border-radius: 10px;
+    align-content: stretch;
+    justify-content: space-around;
+    margin: 20px;
+    min-height: 100%;
+    border-radius: 10px;
   }
 }
 
